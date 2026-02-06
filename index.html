@@ -605,17 +605,22 @@
         </p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate">05/02/2026</span> — By Ezennajiofoeze Jacinta Chinyere
       </div>
 <script>
+  // Create a date object for today
   const today = new Date();
 
-  const options = {
+  // Format options: DD Mon YYYY
+  const formatOptions = {
     day: '2-digit',
     month: 'short',
     year: 'numeric'
   };
 
-  document.getElementById('deployDate').textContent =
-    today.toLocaleDateString('en-GB', options);
+  // Write the formatted date into the footer
+  const deployDateElement = document.getElementById('deployDate');
+  deployDateElement.textContent = today.toLocaleDateString('en-GB', formatOptions);
 </script>
+
+
 
     </div>
   </footer>
