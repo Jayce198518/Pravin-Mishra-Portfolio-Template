@@ -605,9 +605,21 @@
         </p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate">05/02/2026</span> — By Ezennajiofoeze Jacinta Chinyere
       </div>
 <script>
-  document.getElementById("deployDate").textContent =
-    new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
+  // Create a date object for today
+  const today = new Date();
+
+  // Format options: DD Mon YYYY
+  const formatOptions = {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric'
+  };
+
+  // Write the formatted date into the footer
+  const deployDateElement = document.getElementById('deployDate');
+  deployDateElement.textContent = today.toLocaleDateString('en-GB', formatOptions);
 </script>
+
 
 
     </div>
