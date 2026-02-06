@@ -605,17 +605,10 @@
         </p>Pravin Mishra Portfolio v1.0 — Deployed on <span id="deployDate">05/02/2026</span> — By Ezennajiofoeze Jacinta Chinyere
       </div>
 <script>
-  const today = new Date();
-
-  const options = {
-    day: '2-digit',
-    month: 'short',
-    year: 'numeric'
-  };
-
-  document.getElementById('deployDate').textContent =
-    today.toLocaleDateString('en-GB', options);
+  document.getElementById("deployDate").textContent =
+    new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
 </script>
+
 
     </div>
   </footer>
